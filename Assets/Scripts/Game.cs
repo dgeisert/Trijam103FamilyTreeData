@@ -32,6 +32,7 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Score = 0;
         Instance = this;
         scoreScreen.gameObject.SetActive(false);
         pauseMenu.canvas.enabled = false;
@@ -43,21 +44,10 @@ public class Game : MonoBehaviour
     {
         if (active)
         {
-            if (Controls.Shake)
-            {
-                Camera.main.transform.Shake(0.5f, 3);
-                Flytext.CreateFlytext(Vector3.up, score.ToString("#"), Color.white, 6, 1.5f, 1);
-                GameObject.FindObjectOfType<FillBar>().UpdateValue(100 * (Random.value - 0.6f));
-            }
-            if (Controls.Next)
-            {
-                Victory();
-            }
             if (Controls.Pause)
             {
                 Pause();
             }
-            Score += Time.deltaTime * Random.value * 100;
         }
     }
 

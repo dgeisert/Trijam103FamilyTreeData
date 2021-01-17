@@ -18,4 +18,10 @@ public class RecolorMesh : MonoBehaviour
             mf.mesh.colors = colors;
         }
     }
+
+    public void Recolor(Color newColor)
+    {
+        color = newColor;
+        Start();
+    }
 }

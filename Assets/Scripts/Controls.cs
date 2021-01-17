@@ -66,4 +66,11 @@ public class Controls : MonoBehaviour
                 Input.GetKey(KeyCode.RightArrow);
         }
     }
+    public static bool Click
+    {
+        get
+        {
+            return Input.GetMouseButtonDown(0);
+        }
+    }
 }

@@ -112,8 +112,8 @@ MonoBehaviour:
   x: 1
   y: 1
   z: 1
-  min: 0.5
-  max: 2
+  min: 0.3
+  max: 0.6
 --- !u!114 &3830039463505077383
 MonoBehaviour:
   m_ObjectHideFlags: 0

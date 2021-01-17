@@ -43,8 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fb78de5b1fc494b81656cbc2be9d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grow: 0
   trunkMaterial: {fileID: 2100000, guid: f76da4dcc9dd24e88b40f5675afdac4f, type: 2}
   leafMaterial: {fileID: 2100000, guid: c49da84510e574436ac1ab9d5002a264, type: 2}
   rootBalls: 5
   mainBranches: 5
   secondaryBranches: 5
+  woodLow: {r: 0.5377358, g: 0.39886642, b: 0.20038268, a: 0}
+  woodHigh: {r: 0.2830189, g: 0.1997698, b: 0, a: 0}
+  leafLow: {r: 0.08254716, g: 0.5, b: 0.11111811, a: 0}
+  leafHigh: {r: 0.22272164, g: 0.8584906, b: 0.23692414, a: 0}
